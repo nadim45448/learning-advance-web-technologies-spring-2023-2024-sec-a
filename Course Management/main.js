@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var course_1 = require("./course");
+var student_1 = require("./student");
+var teacher_1 = require("./teacher");
+var student = new student_1.default("Nadim Bin Hossain");
+var teacher = new teacher_1.default("Al-Amin");
+var course = new course_1.default();
+course.addCourse("Web technologies");
+course.addCourse("Advance Web technologies");
+student.enroll("Web technologies");
+student.enroll("Advance Web technologies");
+teacher.seeStudentInfo(student);
